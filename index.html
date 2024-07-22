@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Declaration Form</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <div class="form-container">
+            <header>
+                <h1>IIT Mandi iHub & HCI Foundation</h1>
+                <p>Section 8 Not-for-Profit Company</p>
+                <p>
+                    Technology Innovation Hub (TIH) in Human-Computer
+                    Interaction (HCI)
+                </p>
+                <p>
+                    <strong>Regd. Office:</strong> Indian Institute of
+                    Technology Mandi, VPO Kamand, Mandi, Himachal Pradesh, India
+                    – 175075
+                </p>
+            </header>
+            <h2>Declaration Regarding the Issued Items</h2>
+            <form id="declarationForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+                <label for="affiliation">Affiliation:</label>
+                <input
+                    type="text"
+                    id="affiliation"
+                    name="affiliation"
+                    required
+                />
+                <label for="address">Permanent Address:</label>
+                <input type="text" id="address" name="address" required />
+                <label for="purpose">Purpose:</label>
+                <input type="text" id="purpose" name="purpose" required />
+                <label for="mobile">Mobile No.:</label>
+                <input type="text" id="mobile" name="mobile" required />
+
+                <table id="itemsTable">
+                    <thead>
+                        <tr>
+                            <th>Sr. No.</th>
+                            <th>Item Name</th>
+                            <th>Date of Issue</th>
+                            <th>Date of Return</th>
+                            <th>Serial Number of the Item</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <input type="text" name="itemname1" required />
+                            </td>
+                            <td>
+                                <input type="date" name="issuedate1" required />
+                            </td>
+                            <td>
+                                <input
+                                    type="date"
+                                    name="returndate1"
+                                    required
+                                />
+                            </td>
+                            <td>
+                                <input type="text" name="serialno1" required />
+                            </td>
+                            <td>
+                                <button type="button" class="deleteRowButton">
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button" id="addRowButton">Add Row</button>
+                <p>Usage Charges for IIT Mandi Members - ₹1500 per hour</p>
+                <p>
+                    Usage Charges for Non-IIT Mandi Affiliated Members - ₹3000
+                    per hour
+                </p>
+                <label for="payment-proof">Upload Payment Proof:</label>
+                <input
+                    type="file"
+                    id="payment-proof"
+                    name="payment-proof"
+                    accept="image/*"
+                    required
+                />
+
+                <span
+                    ><input
+                        type="checkbox"
+                        id="declaration1"
+                        name="declaration1"
+                    />
+                    <label for="declaration1"
+                        >I hereby declare that the equipment details of which
+                        given above are available to me. I verified that the
+                        condition of the product was good before handing it to
+                        me during my inspections.</label
+                    ></span
+                ><br />
+
+                <span
+                    ><input
+                        type="checkbox"
+                        id="declaration2"
+                        name="declaration2"
+                    />
+                    <label for="declaration2"
+                        >I also declare that I will send prior intimation to IIT
+                        Mandi iHub and HCI Foundation whenever the equipment is
+                        not available for any reason.</label
+                    ></span
+                ><br />
+
+                <span
+                    ><input
+                        type="checkbox"
+                        id="declaration3"
+                        name="declaration3"
+                    />
+                    <label for="declaration3"
+                        >I also declare that I will be responsible for the
+                        above-mentioned equipment and any damage to the
+                        equipment will be borne by me only.</label
+                    ></span
+                ><br />
+
+                <span
+                    ><input
+                        type="checkbox"
+                        id="declaration4"
+                        name="declaration4"
+                    />
+                    <label for="declaration4"
+                        >I also declare that I will return the above-mentioned
+                        item in good working condition to the IIT Mandi iHub and
+                        HCI Foundation office before I leave the company or as
+                        requested by the company.</label
+                    ></span
+                ><br />
+
+                <label for="user-signature">Signatures of the User</label>
+                <input
+                    type="file"
+                    id="user-signature"
+                    name="user-signature"
+                    accept="image/*"
+                    required
+                />
+
+                <label for="user-name">Name:</label>
+                <input type="text" id="user-name" name="user-name" required />
+                <label for="user-affiliation">Affiliation:</label>
+                <input
+                    type="text"
+                    id="user-affiliation"
+                    name="user-affiliation"
+                    required
+                />
+                <label for="date-of-issue">Date of Issue:</label>
+                <input
+                    type="date"
+                    id="date-of-issue"
+                    name="date-of-issue"
+                    required
+                />
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <footer>
+                <p>
+                    <strong>Workplace:</strong> IIT Mandi iHub and HCi
+                    Foundation Office, North Campus, IIT Mandi, VPO Kamand,
+                    District Mandi, Himachal Pradesh - 175075
+                </p>
+                <p>
+                    <strong>Email:</strong> tih@ihubiitmandi.in |
+                    <strong>Website:</strong>
+                    <a href="https://www.ihubiitmandi.in" target="_blank"
+                        >https://www.ihubiitmandi.in</a
+                    >
+                    | <strong>CIN:</strong> U73100HP2020NPL008102
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>
